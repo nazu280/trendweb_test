@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="trend.css">
+      <title>Trend</title>
+      <style>
+        @import url(mobile.css) screen and (hover: none) and (pointer: coarse);
+      </style>
+      <style>
+        #btn1{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-right:-4px;
+            border: 1px solid #4BDA93;
+            background-color: rgba(0,0,0,0);
+            color: #4BDA93;
+            padding: 5px;
+        }
+        #btn_group button:hover{
+            color:white;
+            background-color: #4BDA93;
+        }
+/*        #test_btn2{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-left:-3px;
+        }
+        #btn_group button{
+            border: 1px solid skyblue;
+            background-color: rgba(0,0,0,0);
+            color: skyblue;
+            padding: 5px;
+        }
+        #btn_group button:hover{
+            color:white;
+            background-color: skyblue;
+        }*/
+        html {
+          -webkit-text-size-adjust: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    </head>
+    <SCRIPT LAUNGUAGE='JAVASCRIPT'>
+      function popup() { window.open("popup.html", "popup", "width=400, height=500, left=100, top=50"); }
+    </SCRIPT>
+    <body>
+        <div class="container">
+            <header>
+              <img src="로고.png" width="200", height="">
+                <ul>
+                    <li><a href="https://www.youtube.com/c/트렌드trend">YouTube</a>
+                    </li>
+                    <li><a href="https://open.kakao.com/o/gHTVBHnd">KakaoTalk</a>
+                    </li>
+                    <li><a href="https://discord.gg/PbvwDFgu5j">Discord</a>
+                    </li>
+                </ul>
+            </header>
+            <section>
+                <p>Trend</p>
+                <p>한국 유튜브 트렌드를 따라간다! 유튜브 트렌드 '비'공식 홈페이지입니다. 이 사이트는 네즈라는 인간이 만들었으며 별 기능은 없습니다.</p>
+                <div id="btn_group">
+                  <button id="btn1" onclick='popup()'>디스코드 서버 위젯</button>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+                  new Crate({
+                    server: '863732286730272788', // 트렌드 디스코드
+                    channel: '863918374450495509' // #💬ㅣ자유
+                  })
+                </script>
+            </section>
+            <footer></footer>
+        </div>
+    </body>
+</html>

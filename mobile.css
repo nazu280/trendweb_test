@@ -1,0 +1,43 @@
+@media screen and (hover: none) and (pointer: coarse) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 1.2rem 0;
+    flex-direction: column;
+  }
+  /*header>p {
+    font-size: 4rem;
+    font-weight: 700;
+  }*/
+  header>ul {
+    display: flex;
+  }
+  header>ul>li {
+    list-style-type: none;
+    margin-left: 4rem;
+  }
+  header>ul>li>a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 5px;
+    color: black;
+  }
+  section {
+    padding: 0 1rem;
+    text-align: center;
+  }
+  section>p {
+    margin-bottom: 2rem;
+  }
+  section>p:first-child {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  section>p:last-of-type {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
